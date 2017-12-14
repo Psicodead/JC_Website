@@ -7,7 +7,7 @@ var connect = require('gulp-connect');
 //var copyf= require('gulp');
 
 gulp.task('copyfile', function(){
-gulp.src('src/img/**.{jpg,png}').pipe(gulp.dest('dist/img'))
+gulp.src('src/assets/**.{png,jpg,svg,gif}').pipe(gulp.dest('dist/assets'))
 .pipe(connect.reload());
 console.log("copy!!!");
 });
@@ -35,7 +35,7 @@ gulp.task('start_watch',function(){
 gulp.watch('src/sass/*.{scss,sass}', ['sass']);
 gulp.watch('src/pug/*.pug', ['convert']);
 gulp.watch('src/js/*.js', ['browserify']);
-gulp.watch('src/img/**.{png,jpg,svg,gif}', ['copyfile']);
+gulp.watch('src/assets/**.{png,jpg,svg,gif}', ['copyfile']);
 gulp.watch('src/audio/**.{mp3,wav,mp4,wv}', ['copyaudios'])
 });
 

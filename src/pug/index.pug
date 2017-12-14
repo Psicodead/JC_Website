@@ -1,76 +1,31 @@
 doctype html
 html(lang="en")
 	head
-		tittle= MyFirstApp
-		link(href='/css/style.css', rel='stylesheet')
+		title Madbutchill
+		link(href='./css/style.css', rel='stylesheet')
 	body
-		header
-			h1#banner-tittle Hello PUGGULPSERIFY
-		nav#navbar
-			ul
-				li: a(href='#/gulp-section') Gulp
-				li: a(href='#/nodejs-section') Nodejs
-				li: a(href='#/browserify-section') Browserify
-				li: a(href='#/pug-section') Pug 
-				li: a(href='#/sass-section') Sass
-		#container.col 
+		#container
+			#overlayUI
+				#logoAndTitle
+					figure#logo.baselineTop
+						img(src="./assets/dribbble.svg")
+					p#titleCopy interactive <br> media designer
+
+				#navbar
+					a(href="#") projects
+					a(href="#") about
+					a(href="#") contact
+
+				#socialContainer.baselineBottom
+					.behance.icon
+						a
+							img(src="./assets/behance.svg")
+					.instagram.icon
+						a
+							img(src="./assets/instagram.svg")
+					.dribbble.icon
+						a
+							img(src="./assets/dribbble.svg")
 			
-
-			.gulp-section
-				h2 Gulp
-				image.contentImage(src='img/gulp.img')
-				p.description.
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				button: a(href='http://gulpjs.com/') go gulp 
-			.nodejs-section
-				h2 Nodejs
-				image.contentImage(src='img/nodejs.img')
-				p.description.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				button: a(href='http://gulpjs.com/') go Nodejs
-
-			.browserify-section
-				h2 Browserify
-				image.contentImage(src='img/browserify.img')
-				p.description.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				button: a(href='http://gulpjs.com/') go Browserify
-
-			.pug-section
-				h2 Pug
-				image.contentImage(src='img/pug.img')
-				p.description.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				button: a(href='http://gulpjs.com/') go Pug
-
-			.sass-section
-				h2 Sass
-				image.contentImage(src='img/sass.img')
-				p.description.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				button: a(href='http://gulpjs.com/') go Sass
-		footer
-			h3 	All rights reserved to Tool of North America Copyright 2016
-
-
+			
+			#viewContainer

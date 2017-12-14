@@ -1,0 +1,44 @@
+#overlayUI
+	#navbar, #logoAndTitle, #socialContainer
+		position: fixed
+		display: flex
+		justify-content: space-between
+		width: 300rem
+	
+	.baselineTop
+		transform-origin: 0 100%
+		transform: translateY(-100%)
+
+	.baselineBottom
+		transform-origin: 0 100%
+		transform: translateY(100%)
+
+	#navbar, #logoAndTitle
+		top: 30rem
+	
+	#navbar, #socialContainer
+		right: 100rem
+	
+	#logoAndTitle
+		left: 100rem
+		width: 280rem
+		#logo
+			margin-top: 20rem
+			width: 35rem
+			justify-content: end-flex
+
+	#navbar
+		justify-content: space-between
+		width: 300rem
+	
+	#socialContainer
+		bottom: 50rem
+		width: 180rem
+		justify-content: space-between
+		.icon
+			margin-top: 5rem
+			vertical-align: top
+			width: $social_icon_size
+			
+			img
+				width: 100%

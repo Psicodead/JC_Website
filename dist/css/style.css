@@ -1,49 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  font-size: 1px;
+  margin: 0rem;
+  padding: 0rem;
+  width: 100vw;
+  height: 100vh; }
+
 body {
-  font: 100% Helvetica, sans-serif;
   color: #fff;
-  margin: 0px; }
-  body a {
+  overflow: hidden; }
+  body img {
+    width: 100%; }
+  body a, body p {
+    color: #E4E4E4;
+    font-size: 16rem;
+    font-family: helvetica, arial;
+    font-weight: lighter;
     text-decoration: none;
-    color: black; }
-  body #container div {
-    margin: 0px;
-    padding: 100px 1%;
-    box-sizing: border-box; }
-
-header {
-  background-color: gray;
-  text-align: center;
-  padding: 0;
-  width: 100%;
-  height: 50%; }
-
-h1 {
-  color: white;
-  font-size: 52pt; }
-
-h2 {
-  margin-top: 0; }
-
-nav {
-  text-align: center; }
-  nav li {
-    display: inline-block;
-    margin: 0 5%; }
-
-.gulp-section h2 {
-  color: #E84C50; }
-
-.pug-section h2 {
-  color: #F0CDA3; }
-
-.browserify-section h2 {
-  color: #3C6991; }
-
-.nodejs-section h2 {
-  color: #77AE64; }
-
-.sass-section h2 {
-  color: #CF649A; }
-
-hi {
-  background-color: rgba(150, 255, 150, 0.5); }
+    margin: 0;
+    padding: 0; }
+  body #container {
+    background: #141414;
+    font-size: 16rem;
+    margin: 0rem;
+    padding: 50rem;
+    width: 100vw;
+    height: 100vh; }
+    body #container div {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box; }
+    body #container #viewContainer {
+      background: #F6D3B3;
+      width: 100%;
+      height: 100%; }
+    body #container #overlayUI #navbar, body #container #overlayUI #logoAndTitle, body #container #overlayUI #socialContainer {
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      width: 300rem; }
+    body #container #overlayUI .baselineTop {
+      transform-origin: 0 100%;
+      transform: translateY(-100%); }
+    body #container #overlayUI .baselineBottom {
+      transform-origin: 0 100%;
+      transform: translateY(100%); }
+    body #container #overlayUI #navbar, body #container #overlayUI #logoAndTitle {
+      top: 30rem; }
+    body #container #overlayUI #navbar, body #container #overlayUI #socialContainer {
+      right: 100rem; }
+    body #container #overlayUI #logoAndTitle {
+      left: 100rem;
+      width: 280rem; }
+      body #container #overlayUI #logoAndTitle #logo {
+        margin-top: 20rem;
+        width: 35rem;
+        justify-content: end-flex; }
+    body #container #overlayUI #navbar {
+      justify-content: space-between;
+      width: 300rem; }
+    body #container #overlayUI #socialContainer {
+      bottom: 50rem;
+      width: 180rem;
+      justify-content: space-between; }
+      body #container #overlayUI #socialContainer .icon {
+        margin-top: 5rem;
+        vertical-align: top;
+        width: 25rem; }
+        body #container #overlayUI #socialContainer .icon img {
+          width: 100%; }
